@@ -1,0 +1,92 @@
+create_tree(char* t_info, Element* parent, bool direct) //direct is 0=right, 1=left
+{
+  //char* t_info = NULL;
+  //size_t len = 0;
+  //ssize_t s_len = 0;
+  int start_idx = 0;
+  int end_idx = 0;
+  int first_left_curly_idx = 0;
+  int r_curly_num = 0;
+  int l_curly_num = 0;
+  Element *parent;
+  
+  // get special point in info string
+  //s_len = getline(&t_info, &len, f);
+    
+  for (int i = s_len; i >= 0; i--)
+  {
+    if (t_info[i] == '{')
+    {
+      first_left_curly_idx = i;
+      break;
+    }
+  }
+
+  for (int i = s_len; i >= 0; i--)
+  {
+    if (t_info[i] == '}' || t_info[i] == ' ')
+    {
+      curly_num++;      
+    }
+    
+    if (t_info[i] == '}' && curly_num == 1)
+    {
+      end_idx = i-1;
+    }
+    
+    if (t_info[i] == ' ') && curly_num == 2) // least level of tree
+    {
+      start_idx = i+1;
+      char *name = malloc((end_idx - start_idxi +1) * sizeof(*name)); //name of node
+      if (!parent) //no parent, only create a root
+      {
+        Element* new_parent = malloc(sizeof(*new_parent));
+        new_parent = create_element(name);
+        free(name);
+        return(new_parent);
+      }
+      else if // have parent
+      {
+        if (!direct)
+        {
+          create_right(parent, name);
+        }
+        else if (direct)
+        {
+          create_left(parent, name);
+        }
+        free(name); 
+        
+        if(first_left_curly_idx != 0) // if not last node
+        {
+          char* new_info = malloc(first_left_curly_idx * sizeof(*new_info));
+          strncpy(new_info, t_info, first_left_curly_idx);         
+          direct = !direct;
+          create_tree(new_info, new_parent, direct); 
+          free(new_info);
+        }
+        else
+        {
+          return(new); // finish
+        }
+      }
+    }
+    
+    if (t_info[i] == '}') && curly_num == 2) // upper level of tree
+    {
+      start_idx = i+1;
+      char *name = malloc((end_idx - start_idxi +1) * sizeof(*name)); //name of node
+      if(!parent)
+      {
+        Element* new_parent = malloc(sizeof(*new_parent));
+        new_parent = create_element(name);
+        free(name);
+        char* new_info = malloc((start_idx-1)*sizeof(*new_info));
+        strncpy(new_info, t_info+1, (start_idx-1));
+        create_tree(new_info, new_parent, 0);
+        return(new_parent); 
+      } 
+    }
+  }
+}
+(line[i] == '}' || 

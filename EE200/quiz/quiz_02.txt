@@ -1,0 +1,118 @@
+EE 200 pre-class quiz 2 (there is no quiz 1)
+Read chapters 2 and 3 of All of Programming
+Due via provide, 9/8 at 3:00pm
+  `provide ee200 q2 quiz_02.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+
+1) 
+Which of these are valid variable names?
+(select all that apply)
+[x] puffin
+[ ] 2can
+[x] SEAGULL
+[ ] red-headed-woodpecker
+[x] owl0_0
+[x] _pelican_
+[x] __FLAMINGO__
+
+
+2) 
+What is the result of 25 % 3 ?
+(integer)
+1
+
+3) 
+The following questions refer to this code block:
+
+    int doStuff(int start, int stop)
+    {
+        int x = 5;
+        if(start < stop){
+            int x = 0;
+            printf("#1: x = %d\n", x);
+        }
+        printf("#2: x = %d\n", x);
+    }
+
+    int main()
+    {
+        int x = 1000;
+        doStuff(2, 10);
+        printf("#3: x = %d\n", x);
+    }
+
+What value will be printed for printf #1?
+(integer)
+0
+
+4) 
+What value will be printed for printf #2?
+(integer)
+5
+
+5) 
+What value will be printed for printf #3?
+(integer)
+1000
+
+6) 
+Why do switch/case statements use the keyword `break`, but if/else statements do not?
+(free response)
+Once we jump into a paticular case, the execution would countinue until it meet the keyword 'break'. If we don't use the keyword 'break', it may run some excution in different cases, which is not expected. However, if/else statement only run the code in 'then' block if the conditional expression is 'true'. And when it reaches the end of the 'then' block, it will skip the 'else' block and continue to run statements from the end of 'else' block. And if/else statement only runs the code in 'else' block if the conditional expression is 'false', at the end of 'else' block, it continues to excute the following statements. In this way, no unexpected code will run.
+
+7) 
+What is the difference between a while and do-while loop (besides the fact that a do-while begins with the keyword `do`)?
+(free response)
+'While loop' checks its conditional expression at the top of the loop, so it may skip the whole loop if the condition is 'false' at first. While 'do-while loop' checks its conditional expression at the bottom of the loop, so it guarentees to run its body at least once.
+
+8) 
+Which keyword can only be used inside a loop?
+(select one)
+[ ] do
+[ ] break
+[ ] return
+[x] continue
+[ ] foreach
+
+
+
+9) 
+What is 60 (decimal) in binary?
+(free response)
+111100
+
+10) 
+What is printed as a result of running the code below?
+
+  char x = 'X';
+  printf("x: %d", (int)x);
+
+(select one)
+[ ] x: %d
+[ ] x: X
+[ ] x: 'X'
+[ ] x: int
+[x] x: 88
+[ ] x: 24
+
+
+
+11) 
+What is the difference between a struct and an enum?  Both provide ways to group collections of identifiers.
+(free response)
+The variable type of struct is up to you, while the variable type of enum is int (constant number starts from 0). And we can change the fields of struct outside the struct using a dot, but the value of enum level can not change throught the program.
+
+12) 
+What questions do you have about the material in this chapter?
+(free response)
+Wouldn't it be better to try to avoid casting in our programming?
+Since each level of enum is a constant value, does that mean we can declare a level using constant number instead of the name of level? (Although doing this loses the meaning of enum) 
+
+13) 
+What concepts would you most like to review?
+(free response)
+Casting, enum, and struct.

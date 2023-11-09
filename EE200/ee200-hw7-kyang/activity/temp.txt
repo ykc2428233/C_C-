@@ -1,0 +1,24 @@
+while not = \0, read chars
+  if != \n
+    if != \t and t_c < 1
+      s[i] = char
+      for(int j = 0; j < i; j++)
+      {
+        printf("%c",s[j])
+      }
+    else if ( == \t)
+    {
+      t_c++;
+      if(c_t == 1)
+      {
+        s[i] = '\0';
+      }
+    }
+    i++;
+  else if( == \n)
+  i = 0;
+  t_c = 0;
+  
+  while not = \t, save to seconds
+
+  if = \n, then, while not = \t save to seconds 

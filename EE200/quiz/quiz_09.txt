@@ -1,0 +1,41 @@
+EE 200 pre-class quiz 9
+Read chapter 7 of All of Programming
+Due via provide, 10/11 at 3:00pm
+  `provide ee200 q9 quiz_09.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1)  Why does the book say the recusive implementation of the Fibonacci function is slow?
+(select one)
+[x] Because the algorithm duplicates work
+[ ] Because the recursive function calls take a lot of time
+[ ] Because the Fibonacci function is hard to compute
+[ ] Because most computers aren't optimized for recursive algorithms
+
+
+2)  What language does one of the authors of the book particularly like?
+(select one)
+[ ] C/C++
+[ ] Java
+[ ] Python
+[ ] Haskell
+[x] SML
+
+
+3)  What is important about tail recursion?
+(select one)
+[ ] Tail-recursive functions are faster than head-recursive ones.
+[ ] Nothing happens in a tail recursive function, so it can be optimized out by the compiler.
+[x] Tail-recursive functions can be transformed into while loops.
+[ ] Animals have tails, too.
+
+
+4)  What questions do you have about the material in this chapter?
+(free response)
+Would mutual recursions in the parser for a C compiler duplicate work?
+
+5)  What concepts would you most like to review?
+(free response)
+Mutual Recursion.

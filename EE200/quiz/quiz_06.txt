@@ -1,0 +1,64 @@
+EE 200 pre-class quiz 6
+Read chapter 10 of All of Programming
+Due via provide, 9/27 at 3:00pm
+  `provide ee200 q6 quiz_06.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+
+1)  If we have the declaration:
+  char pot[] = "copper kettle"
+
+What is the length of the `pot` array (in bytes)?
+
+(integer)
+14
+
+2)  If we have the declarations:
+  char castiron[] = "My cast iron skillet";
+  char pan[5];
+
+Which of the following are valid ways to copy the string (i.e., succeed in copying as much of the string as possible, and don't do something dangerous/illegal)?
+
+(select all that apply)
+[ ] pan = castiron;
+[x] *pan = *castiron;
+[ ] &pan = &castiron;
+[ ] strcmp(pan, castiron);
+[ ] strcpy(pan, castiron);
+[x] strncpy(pan, castiron, 5);
+
+
+3)  Which of these are valid declarations of functions taking multidimensional arrays?
+
+(select all that apply)
+[x] saute(int x[2][2])
+[x] deepfry(int x[][2])
+[ ] braise(int x[2][])
+[x] bake(int x[][2][3])
+[ ] grill(int x[2][5][])
+
+
+4)  Why would you use an array of pointers to arrays instead of a 2D array?
+
+(select all that apply)
+[ ] Accessing elements is faster because of pointer dereferencing.
+[x] The arrays can be different sizes, instead of all the same.
+[ ] The arrays can hold different types of data, without the need to cast.
+[x] It allows us to rearrange the "matrix" just by manipulating pointers.
+
+
+5)  What are two examples the book gives for why function pointers are useful?
+(free response)
+1. We can make a function pointer a parameter to a function we are writing or that is provided by a library, this can help us avoid duplication of code.
+2. We can also use function pointers to achieve a generic sorting function--one that can sort any type of data.
+
+6)  What questions do you have about the material in this chapter?
+(free response)
+The type "const char * const * s1ptr", is it a pointer to a const pointer.
+
+7)  What concepts would you most like to review?
+(free response)
+Function pointers.

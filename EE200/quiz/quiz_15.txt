@@ -1,0 +1,56 @@
+EE 200 pre-class quiz 15
+Read chapter 19 of All of Programming
+Due via provide, 11/15 at 3:00pm
+  `provide ee200 q15 quiz_15.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+
+1)  What are the three problems the book outlines with C-style error handling?
+(select all that apply)
+[x] It is easy to forget or ignore
+[ ] Some types of errors cannot be detected
+[x] A return value does not provide much information about what went wrong
+[x] Error checks clutter the code
+[ ] Printing error messages to stdout is unreliable
+
+
+
+2)  In C++, we can throw:
+(select one)
+[ ] Only messages (const char*)
+[ ] Only a subclass of std::exception
+[ ] Only std::exception
+[ ] Only std::exception or a subclass
+[x] Any object, but we should use std::exception or a subclass
+[ ] Any object
+
+
+
+3)  What happens if an exception is thrown while unwinding the stack (i.e., while trying to handle another exception)?
+(select one)
+[ ] The first exception is ignored, and the second exception takes precedence
+[ ] The second exception is ignored, and the stack continues to unwind
+[ ] The secong exception is handled after the first exception is handled
+[x] The program crashes
+
+
+
+4)  What is the problem with the second code block at the beginning of section 19.7? (i.e., what is it about the code that means it makes no exception guarantees?)
+(select one)
+[ ] It does not check for a null reference
+[ ] It does not check for self-assignment
+[ ] It does not catch any exceptions that could be thrown
+[x] It frees the old `data` array before allocating a new array
+
+
+
+5)  What questions do you have about the material in this chapter?
+(free response)
+Any examples of handling exceptions with unexpected() and terminate()?
+
+6)  What concepts would you most like to review?
+(free response)
+Using exceptions properly

@@ -1,0 +1,147 @@
+EE 200 pre-class quiz 4
+Read chapter 8 of All of Programming
+Due via provide, 9/15 at 3:00pm
+  `provide ee200 q4 quiz_04.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1)  The next two questions use the following declaration:
+  int oats;
+
+What is the type of the the expression `&oats`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+
+2) 
+What is the type of the the expression `*oats`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+
+3)  The next three questions use the following declaration:
+  int *wheat;
+
+What is the type of the the expression `&wheat`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+
+4) 
+What is the type of the the expression `*wheat`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+5) 
+What is the type of the the expression `**wheat`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+6)  The next three questions use the following declaration:
+  int **barley;
+
+What is the type of the the expression `*barley`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+7) 
+What is the type of the the expression `**barley`?
+(select one)
+[ ] int&
+[ ] int
+[ ] int*
+[ ] int**
+[ ] int***
+[ ] invalid
+
+
+
+8)  Given the same declarations:
+
+  int oats;
+  int *wheat;
+  int **barley;
+
+Which of the following statements are legal?
+(select all that apply)
+[ ] oats = 5;
+[ ] barley = &oats;
+[ ] *wheat = 5;
+[ ] barley = &wheat;
+
+
+9)  Given the declarations below:
+
+  const int rice;
+  const int * maize;
+  const int * const millet; 
+
+Which of the following are legal (i.e., const-correct)?
+(select all that apply)
+[ ] rice = 5;
+[ ] maize = &rice;
+[ ] *maize = 5;
+[ ] millet = &rice;
+[ ] int * const quinoa = &rice;
+
+
+
+10)  What happens if I execute the code below? (Try it if you're not sure!)
+  int rye = 5;
+  int* rye_p = NULL;
+  *rye_p = rye;
+
+(select one)
+[ ] rye_p is set to 5
+[ ] The value rye_p points to is set to 5
+[ ] Nothing happens
+[ ] The compiler gives an error
+[ ] The program crashes
+
+
+
+11)  What questions do you have about the material in this chapter?
+(free response)
+
+
+12)  What concepts would you most like to review?
+(free response)
+

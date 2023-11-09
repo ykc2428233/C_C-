@@ -1,0 +1,67 @@
+EE 200 pre-class quiz 11
+Read chapters 14 and 16 of All of Programming
+Due via provide, 10/26 at 3:00pm
+  `provide ee200 q11 quiz_11.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1) 
+What does the book say is the difference between a class and a struct?
+(select one)
+[ ] A class can have functions associated with it, a struct cannot
+[ ] A class can use the `public` and `private` keywords, a struct cannot
+[x] The default access level of the members
+[ ] Structs have to be typedef'ed, classes do not
+
+
+
+2) 
+What is "this" in C++?
+(select one)
+[ ] The name of the executable (like argv[0] in C)
+[ ] A way to do multiple dereferencing operations at once to access a data object
+[ ] A reference to the object the method is inside of
+[x] A pointer to the object the method is inside of
+
+
+3) 
+How do you dereference a reference?
+(select one)
+[ ] Using the * operator, just like a pointer
+[ ] Using the & operator, because a reference is kind of the opposite of a pointer
+[ ] Using the ^_^ operator
+[ ] It depends on whether the reference is const or not
+[x] You don't dereference references in C++.
+
+
+4) 
+References are different from pointers because:
+(select all that apply)
+[ ] References require copying a whole object, while pointers do not
+[x] Pointers can be reassigned, but references are permanently assigned when initialized
+[ ] Only references can be const in C++
+[x] References cannot be dereferenced with the [] operator
+
+
+5) 
+C only allows a single function with a given name, but chapter 14 of the book describes mechanisms in C++ which allow multiple functions to have the same name.  These include
+(select all that apply)
+[x] function overloading
+[ ] return differentiation
+[ ] dynamic renaming
+[x] namespaces
+[ ] multiple inheritance
+
+
+
+6) 
+What questions do you have about the material in this chapter?
+(free response)
+When to use reference, and when to use pointer in C++
+
+7) 
+What concepts would you most like to review?
+(free response)
+this pointer

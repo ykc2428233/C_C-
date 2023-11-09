@@ -1,0 +1,58 @@
+EE 200 pre-class quiz 3
+Read chapters 1.1-1.3 and 4-6 of All of Programming
+Due via provide, 9/13 at 3:00pm
+  `provide ee200 q3 quiz_03.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+
+1)  What are the steps to writing code, as described by All of Programming?
+(free response)
+1.Work an instance of the problem; 2.Write down a step-by-step approach to solve one specific instance of the problem;
+2.Generlize to all instances of the problem; 4.Test the generalized algorithm with different instances;
+5.Translate the algorithm into code; 6.Test the code, find all the bugs in the code; 7.Debug the code, fix the problems in code
+
+2)  Why does the code below give a compile error ("expected expression before '=' token")?
+
+#define THRESHOLD = 10;
+
+void f(int x)
+{
+  if(x > THRESHOLD){
+    printf("x is too big!\n");
+  }
+}
+
+(select one)
+[ ] THRESHOLD is invalid identifier
+[ ] THRESHOLD cannot be used in a comparison
+[x] The #define line has extra characters
+[ ] The #define line should be between the function declaration and the opening brace
+
+
+
+3)  What is the difference betwen white box testing and black box testing?
+(free response)
+Black box testing considers only the behavior of the function, while white box testing also involves examining the code you implemented.
+
+4)  According to the book, why is an "assert" useful?
+(select one)
+[ ] It speeds up code execution
+[x] It aborts the program quickly after an error
+[ ] It protects critical variables from changing their value
+[ ] It checks for errors before they occur
+[ ] It makes hesitant programmers more assertive
+
+
+
+5) 
+What questions do you have about the material in this chapter?
+(free response)
+How do you maintain the makefile? Do we need to update makefile whenever we add some new .c or .h files?
+
+6) 
+What concepts would you most like to review?
+(free response)
+Compiler options

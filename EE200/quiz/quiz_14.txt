@@ -1,0 +1,51 @@
+EE 200 pre-class quiz 14
+Read chapter 18 of All of Programming
+Due via provide, 11/11 at 11:59pm
+  `provide ee200 q14 quiz_14.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1)  Which of these are probably suitable for an inheritance relationship?
+(select all that apply)
+[x] Car : Vehicle
+[ ] Province : Country
+[ ] Butterfly : Moth
+[x] Sophomore : Student
+[ ] WebPage : WebSite
+
+
+2)  If `Chimp` inherits from `Primate`, what happens when a new `Chimp` object is created?
+(select one)
+[ ] Chimp constructor is called first, then Primate
+[x] Primate constructor is called first, then Chimp
+[ ] Chip constructor overrides Primate constructor
+[ ] It depends on whether the inheritance is public or private
+
+
+3)  What is the "static type" of an object (as opposed to the "dynamic type" of an object").
+(free response)
+The static type is the type the compiler is aware of, which is used to determine the method to call.
+
+4)  Why is it important to declare a destructor `virtual` if the class will be used polymorphically?
+(free response)
+If we want a method to be dynamically dispatched, which is the method is determined by the dynamic type, we have to declare the method as 'virtual'.
+
+5)  Which of these are always true for an abstract class?
+(select all that apply)
+[ ] It is declared with the keyword `abstract`.
+[ ] All of its methods are virtual
+[ ] None of its methods are virtual
+[ ] All of its virtual methods are abstract
+[x] At least one of its methods is "pure virtual"
+[x] It cannot be instantiated with `new`
+
+
+6)  What questions do you have about the material in this chapter?
+(free response)
+Can we not use 'const' in pure virtual function declaration?
+
+7)  What concepts would you most like to review?
+(free response)
+Inheritance and Templates.

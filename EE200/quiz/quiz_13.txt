@@ -1,0 +1,56 @@
+EE 200 pre-class quiz 13
+Read chapter 17 of All of Programming
+Due via provide, 11/3 at 11:59pm
+  `provide ee200 q13 quiz_13.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1)  Template parameters may be:
+(select all that apply)
+[ ] Constants
+[ ] Functions
+[x] Variables
+[x] Types
+
+
+2)  Why must the implementations for templated functions and classes be defined in a header file, rather than a cpp file?
+(free response)
+The C++ compiler is aware of the problems that typically arise in placing implementations in header files and takes special care to make sure the linker does not encounter problems when the header file is included by multiple sources file, which are linked together.
+
+3)  Why isn't this code valid?  The book uses this as a specific example in section 17.3.
+
+    template<int y>
+    int f(int x)
+    {
+      return x*y;
+    }
+  
+    for(int i = 0; i < 4; i++){
+      x += f<i>(x);
+    }
+
+(select one)
+The compiler must create a specialization for the argument values given. If the compiler cannot figure out the exact value of the parameter, then it has no idea what specialization of the template it should create and thus cannot compile the code.
+
+
+4)  Section 17.3.4 doesn't explain *why* the white space is required.  Make an educated guess why this is the case.
+(free response)
+>> is the same as stream in operator, and we want something different.
+
+5)  The book gives two examples of why std::pair might be useful.  What are they?
+(select all that apply)
+[x] To return two things from a function
+[ ] To build a dictionary with keys and values
+[x] To group items to be stored in a std::vector
+[ ] To replace a class or struct
+
+
+6)  What questions do you have about the material in this chapter?
+(free responsed)
+What is iterators and when do we use it?
+
+7)  What concepts would you most like to review?
+(free response)
+Iterator.

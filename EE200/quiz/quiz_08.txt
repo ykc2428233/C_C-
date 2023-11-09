@@ -1,0 +1,58 @@
+EE 200 pre-class quiz 8
+Read chapter 11 of All of Programming
+Due via provide, 10/7 at 3:00pm
+  `provide ee200 q8 quiz_08.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+
+1)  If an executable program is run with no arguments, what are the contents of argv[0]?
+(select one)
+[ ] The name of the shell which launched the program
+[x] The name of the program
+[ ] An empty string
+[ ] It doesn't exist; argv is a NULL pointer
+
+
+2)  What does the book say is the difference between a system call and a library call?
+(free response)
+System call transfers control into the OS, requesting it to perform a task, library call calls a function found in a library.
+
+3)  How can your code detect when a system call fails?
+(select all that apply)
+[x] By checking the variable `errno`
+[x] By testing return values
+[x] By reading from stderr
+[ ] By examining the kernel log
+
+
+4)  If my code opens a file with:
+
+    FILE* f = fopen('quiz_07.txt', 'w+');
+
+and the file exists, what happens?
+(select one)
+[ ] The function returns NULL
+[ ] The file is opened, and its contents are available for reading and writing
+[x] The file is opened for reading and writing, but existing text is erased
+[ ] The file is opened for reading and writing, and writes add new text at the end
+
+
+5)  Why does fgetc return an int, since its job is to return the next character from a file?
+(select one)
+[ ] The return value is an error code, and the character is passed with a pointer
+[x] So that it can return a non-char value to indicate the end of a file
+[ ] Because some file types (e.g, UTF-16) use more than 1 byte to represent a character
+[ ] Because numeric values are returned as integers, rather than characters
+
+
+6)  What questions do you have about the material in this chapter?
+(free response)
+Is is possible to change the value of arg[] in a program? 
+Does fgetc get characters one by one?
+What's the difference between the errno and the return values? 
+
+7)  What concepts would you most like to review?
+(free response)
+Closing files and writing buffered data to disk. 

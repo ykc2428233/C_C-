@@ -1,0 +1,37 @@
+EE 200 Homework 1
+Due via provide, 9/6 before you leave class
+  `provide ee200 hw1 hw1.txt`
+Write your responses below the prompts.  Please don't delete any of the
+existing text; you'll make the grader fail.  For multiple choice, just put an
+'x' or some other character in the brackets.
+
+1)
+What name should I call you by?
+(string)
+KC(Kaicheng Yang)
+
+2)
+What is your Tufts email address? (first.last@tufts.edu)
+(string)
+Kaicheng.Yang@tufts.edu	
+
+3)
+What is your github user ID? (If you don't have one, go sign up at github.com)
+(string)
+ykc2428233
+
+4)
+Why are you taking this course?  What do you hope to get out of it?
+(free response)
+I want to learn some C/C++ coding.
+
+5)
+What programming experience do you have?
+Even if you don't feel like you have "real" programming experience, please include anything that involves computers automatically doing what you tell them: spreadsheet formulas, HTML/CSS, LabVIEW, etc.
+(free response)
+Python, Tcl
+6)
+What concerns do you have about this course?  Is there anything that you're nervous about?
+(free response)
+C/C++ syntax
+
